@@ -24,14 +24,16 @@ console.log(nombre)
 
 
 let Nombre ="Harry"
-let apellido ="Muir"
-let edad =27
-let direccion ="25 metros sureste en mi casa"
+let Apellido ="Muir"
+let Edad =27
+let Direccion ="25 metros sureste en mi casa"
 
 
 console.log(nombre)
 console.log(apellido)
 console.log(edad)
 console.log(direccion)
+
+console.log("Hola mi nombre es :"+Nombre+" Y mi apellido es "+" mi edad es " +Edad+"vivo en " +Direccion)
 
 
