@@ -30,5 +30,49 @@ let Auto ={
     velocidad:[20,60,80,120]
 
 }
+console.log(Auto.velocidad[80])
+console.table()
+console.error
+console
 
-console.log(Auto.velocidad[20])
+
+let mensaje = "la velocidad del del auto es "+Auto.velocidad+ "con 4 llantas "+Auto.llantas
+
+//patron literal
+
+let mensaje2 =`la marca del auto es ${Auto.velocidad} con 4 llantas,${Auto.llantas}`
+
+//3 operadores
+//arietes
+
+
+
+
+//COMPARACION
+
+
+
+
+//4-estructuras de controles
+
+let pato = true 
+
+if (pato = true) {
+    alert("pato"+pato)
+} else {
+    alert("no cumple")
+
+}
+
+let edad  = 18 
+
+if (edad >=18 ) {
+    alert("es mayor de edad")
+} else {
+    alert("no lo es")
+
+}
+
+
+
+
