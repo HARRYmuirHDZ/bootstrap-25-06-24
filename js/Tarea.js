@@ -136,13 +136,11 @@ let nacionalidad = prompt("Ingresa tu nacionalidad:");
 
 // // Función para verificar si la persona puede votar
 function puedeVotar(edad, nacionalidad) {
-    return (edad >= 18 && (nacionalidad === "colombiano" || nacionalidad === "peruana"))
-}
-
-if (puedeVotar(edad, nacionalidad)) {
-    console.log("Puedes votar.");
-} else {
+    if(edad >= 18 && nacionalidad === "colombiano" || nacionalidad === "peruana"){
+        console.log("Puedes votar.");
+    } else {
     console.log("No puedes votar.");
+    }
 }
 
 
