@@ -21,7 +21,7 @@ function calculadora2(event){
         case "-":
             calculo = Num1 - Num2;
             break;
-        case "*":
+        case "*":d 
             calculo = Num1 * Num2;
             break;
         case "/":
