@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Información</title>
+</head>
+<body>
+    <h2>Solicitud de Información</h2>
+    <form id="formularioSolicitud">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+        <br><br>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
+        <br><br>
+        <label for="asunto">Asunto:</label>
+        <input type="text" name="asunto" id="asunto" placeholder="Ingrese el asunto" required>
+        <br><br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" placeholder="Ingrese su mensaje" required></textarea>
+        <br><br>
+        <label for="copia">Desea recibir una copia? </label>
+        <select name="copia" id="copia">
+            <option value="si">Si</option>
+            <option value="no">No</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar Solicitud">
+    </form>
+    <div id="resultado"></div>
+
+    <script src="js/enviarSolicitud.js"></script>
+</body>
+</html>
