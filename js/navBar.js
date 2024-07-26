@@ -13,7 +13,7 @@ let Contenedor = document.getElementById('V_NavBar')
 
 let Plantilla = `
 
- <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@ let Plantilla = `
                         <li class="nav-item">
                             <a class="nav-link" href="New-Product.html">Crear Producto</a>
                         </li>
-                       <li class="nav-item">
+                        <li class="nav-item">S
                             <a class="nav-link" href="#">${NuevaOpcion}</a>
                         </li>
                         <li class="nav-item dropdown">
@@ -47,10 +47,9 @@ let Plantilla = `
                         <input class="form-control mr-sm-2" type="text" placeholder="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                     </form>
-                </div>
+                </div>`;
 
-`
 
-Contenedor.innerHTML = Plantilla 
+Contenedor.innerHTML = Plantilla ;
 
 }
