@@ -1,15 +1,17 @@
 
 
-
-Navegacion();
+//Componente NavBar
+Mostrar_NavBar();
 
 //Let Contenedor =ID
-//Let Contenido = "Hola Mundo"
-//Contenedor.innerHTML = Contenido
-function Navegacion() {
-let V_NavBar = document.getElementById('V_NavBar')
+//Let Plantilla = "Hola Mundo"
+//Contenedor.innerHTML = Plantilla
+function Mostrar_NavBar() {
+let NuevaOpcion = "Pagina de Mercado";
 
-let contenido = `
+let Contenedor = document.getElementById('V_NavBar')
+
+let Plantilla = `
 
  <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -27,7 +29,9 @@ let contenido = `
                         <li class="nav-item">
                             <a class="nav-link" href="New-Product.html">Crear Producto</a>
                         </li>
-                      
+                       <li class="nav-item">
+                            <a class="nav-link" href="#">${NuevaOpcion}</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -47,11 +51,6 @@ let contenido = `
 
 `
 
-V_NavBar.innerHTML = contenido 
+Contenedor.innerHTML = Plantilla 
 
 }
-
-
-
-
-
