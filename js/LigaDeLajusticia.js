@@ -1,15 +1,14 @@
-console.log("Funcionando");
-// 1--evento que carga la funcion cuando el dom este en lam pagina
-//control=space
+console.log("funcionando")
+// 1--Evento que carga la funcion cuando el DOM este en la pagina 
+//Control + Space
 document.addEventListener('DOMContentLoaded', () => {
-    
-    Mostrar_LigaDeLajusticia(Heroes)
+
+    Mostrar_LigaDeLaJusticia(Heroes) //Carge la pagina  
+
+});
 
 
-
-
-})
-// 2-arreglo de objetos
+// 2- Arreglo de objetos
 const Heroes = [
     {
         nombre: "Aquaman",
@@ -37,22 +36,37 @@ const Heroes = [
     }
 ];
 
+// 3-Funcion que muestra los heroes 
+//A  -ID del contendor
+//B  -Plantilla
+//C  -Ciclo de la parte 2 (2- Arreglo de objetos) 
+//D Meter la Plantilla en el contenedor 
 
-// 3-funcion que muestra los heroes 
-// 1-id del contenedor 
-// 2-plantilla
-// 3-ciclo de la parte 2 (2-arreglo de objetos )
-// 4-meter la plantila en el contenedor 
+function Mostrar_LigaDeLaJusticia(Heroes) { //Firma
+    // let Contenedor //A                                                                                      
+    let contenedor = document.getElementById("contenedorHeroes");
+    // let Plantilla  //B
+    let plantilla = "";
+    // //C 
+    Heroes.array.forEach(element => {
+        plantilla += `
+        <div>
+            <h2>${element.nombre}</h2>
+            <p>${element.bio}</p>
+            <img src="${element.img}" alt="${element.nombre}">
+        </div>
+        
+        `;
+    });
 
-
-function Mostrar_LigaDeLajusticia(Heroes){ //firma
-    // let contenedor
-    // let plantilla
-    
-
-    // contenedor.innerHtml = plantilla
-    alert(JSON.stringify(Heroes))
+    // Contenedor.innerHtml = Plantilla //D
+    contenedor.innerHTML= plantilla
+    console.log(Heroes);
 }
+
+//JSON
+//String 
+
 
 
 
