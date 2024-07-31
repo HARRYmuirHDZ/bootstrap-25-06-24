@@ -51,7 +51,9 @@ function Mostrar_LigaDeLajusticia(Heroes){ //firma
     
 
     // contenedor.innerHtml = plantilla
-    alert(Heroes)
+    alert(JSON.stringify(Heroes))
 }
+
+
 
 
