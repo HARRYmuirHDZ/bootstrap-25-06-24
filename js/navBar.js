@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    Mostrar_NavBar();
+    Mostrar_NavBar(ListadoMenu);
 
 
 })

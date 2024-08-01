@@ -48,19 +48,27 @@ function Mostrar_LigaDeLaJusticia(Heroes) { //Firma
     // let Plantilla  //B
     let plantilla = "";
     // //C 
-    Heroes.array.forEach(element => {
+    Heroes.forEach(element => {
         plantilla += `
-        <div>
-            <h2>${element.nombre}</h2>
-            <p>${element.bio}</p>
-            <img src="${element.img}" alt="${element.nombre}">
+        <div class="col-lg-3 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top float-right rounded" style="border-radius: 15px;" src="${element.img}" alt="${element.nombre}">
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">${element.nombre}</h4>
+                    <p class="card-text">${element.bio}</p>
+                    <div class="mt-auto">
+                        <button type="button" class="btn btn-warning btn-sm btn-block">Ver más +</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
         
         `;
     });
 
     // Contenedor.innerHtml = Plantilla //D
-    contenedor.innerHTML= plantilla
+    contenedor.innerHTML = plantilla
     console.log(Heroes);
 }
 
